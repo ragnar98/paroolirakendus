@@ -1,0 +1,42 @@
+﻿<Page
+    x:Class="KolmasProjekt.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:KolmasProjekt"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel FocusVisualPrimaryBrush="Black">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FF63A3C1"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <TextBlock Name="textblock1" FontSize="25" FontFamily="Times New Roman" Margin="50,10,0,0"> Sisestage oma kasutajanimi ja parool!</TextBlock>
+            <TextBox Name="textbox1" Margin="50,15,150,0" Background="AntiqueWhite" PlaceholderText="Kasutajanimi"></TextBox>
+            <PasswordBox x:Name="passwordbox1" Margin="50,15,150,0" Background="AntiqueWhite" PlaceholderText="Parool"/>
+            <Button Name="button1" Margin="50,10,0,0" Click="button1_Click" Background="#33000000">Logi sisse
+            </Button>
+        </StackPanel>
+
+        <StackPanel Grid.Column="2">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FF63A3C1"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <TextBlock Name="textblock2" FontSize="40" FontFamily="Times New Roman" Margin="45,20,45,0"></TextBlock>
+
+        </StackPanel>
+
+    </Grid>
+</Page>
